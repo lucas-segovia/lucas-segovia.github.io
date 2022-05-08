@@ -1,0 +1,137 @@
+body{
+    background-color: #F3F5FC;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(5vh, auto);
+  }
+
+.wrapper > header {
+    grid-column: 2/span 14;
+    grid-row: 1/span 2;
+}
+
+#logo{
+    padding-top: 25px;
+}
+.message{
+    display: grid;
+    grid-column: 4/span 10;
+    grid-row: 3/ span 8;
+    justify-content: center;
+    padding: 10px;
+}
+
+.message > textarea {
+    color: #0A3871;
+    font-weight: 700;
+    font-size: 16px;
+    width: 100%;
+    height:100%;
+    background-color: transparent;
+    border: 0px solid;
+    resize: none;
+    outline: none;
+}
+
+.response{
+    display: grid;
+    grid-column: 16/span 4;
+    max-width: 4fr;
+    grid-row: 2/span 12;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    border-radius: 25px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 5px 20px rgb(200, 200, 200);
+}
+
+.response > img{
+    width: 75%;
+    height: auto;
+    margin: auto;
+    justify-content: center ;
+}
+
+#rsp{
+    max-width: 250px;
+    word-wrap: break-word;
+    font-weight: 300;
+    font-size: 16px;
+    width: 80%;
+    background-color: transparent;
+    border: 0px solid;
+    resize: none;
+    outline: none;
+    display: none;
+}
+
+.response button{
+    grid-row: 11;
+    width: 87.5%;
+    height: 50px;
+    position: relative;
+    left: 6.25%;
+    border-radius: 15px;
+    background-color: #fff;
+    border:1px solid #0A3871;
+}
+
+
+#warn{
+    font-weight: 700;
+}
+
+.buttons{
+    grid-column: 5/span 8;
+    grid-row: 11/span 3;
+}
+
+.flex-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.flex-wrapper button{
+    width: 50%;
+    height: 50px;
+    padding: 15px 20px;
+    border-radius: 15px;
+}
+
+#cipher{
+    border:1px solid #0A3871;
+    background-color: #0A3871;
+    color: #F3F5FC;
+}
+
+#d-cipher{
+    border:1px solid #0A3871;
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+#copy{
+    display: none;
+}
+
+footer{
+    display: grid;
+    grid-row: 14;
+    grid-column: 1/ span 20;
+}
+
+#name:hover{
+    text-shadow: 2px 2px 10px #0A3871;
+    transition: 0.2s;
+}
